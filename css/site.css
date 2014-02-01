@@ -1,0 +1,66 @@
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-weight: bold;
+}
+
+label
+{
+    float: left;
+    padding-top: .2em;
+    margin-right: .3em;
+    width: 170px;
+    text-align: right;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+input[type="text"], input[type="password"]
+{
+    margin-bottom: .2em;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: #444;
+    width: 300px;
+}
+
+select
+{
+    margin-bottom: .2em;
+    border: 1px solid #ccc;
+    padding: 2px;
+    width: 306px;
+    color: #444;
+}
+
+table {
+	border-width: 2px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: #f48203;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+table th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #f48203;
+	background-color: white;
+}
+table td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #f48203;
+	background-color: white;
+}
