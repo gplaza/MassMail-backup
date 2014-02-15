@@ -105,8 +105,7 @@ if(isset($_FILES['fichier']))
 				<div class="panel-body">
 
 					<!-- <div class="row">		 -->
-					<form class="col-lg-2" method="post" id="form-search"
-						action="<?php echo $_SERVER['PHP_SELF']; ?>">
+					<form class="col-lg-2" method="post" id="form-search" action="index.php">
 
 						<div class="input-group">
 
@@ -126,7 +125,7 @@ if(isset($_FILES['fichier']))
 					</form>
 
 					<form method="get" id="form-select"
-						action="<?php echo $_SERVER['PHP_SELF']; ?>">
+						action="index.php">
 						<?php 
 						if ($view == $limited) {
 							$buttonText = 'Mostrar Todo';
