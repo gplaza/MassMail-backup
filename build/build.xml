@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MassMailProject" default="ci" basedir=".">
+
+	<property name="deployFolder" value="/var/www/massmail.gplaza.cl" />
+
+	<target name="ci" description="Main Task continue integration" depends="clean,finalInstall" />
+
+	<fileset dir="${project.basedir}" id="baseProjectFiles">
+		<exclude name="**/build" />
+		<include name="**" />
+	</fileset>
+ 
+	<target name="clean" description="Clean the artefac directory">
+
+		<!-- init clean files structure -->
+		<delete dir="${project.basedir}/files" />
+		<mkdir dir="${project.basedir}/files" />
+		
+	</target>
+
+	<target name="finalInstall">
+
+		<phingcall target="localCopy" />
+		<phingcall target="localSetMode" />
+		
+	</target>
+
+	<!-- ########################################## -->
+	<!-- final install with local directory target -->
+	<!-- ########################################## -->
+
+	<target name="localCopy">
+		<copy todir="${deployFolder}" overwrite="true">
+			<fileset refid="baseProjectFiles" />
+		</copy>
+	</target>
+
+	<target name="localSetMode">
+		<chmod mode="0777">
+			<fileset dir="${deployFolder}">
+				<include name="**/files" />
+			</fileset>
+		</chmod>
+	</target>
+	
+</project>
