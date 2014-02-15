@@ -244,7 +244,7 @@ if(isset($_FILES['fichier']))
 
 		</div>
 		<div class="container" style="display:none;" id="tabs-2">
-			<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
+			<form method="post" action="index.php" enctype="multipart/form-data">
 				<fieldset style="font-size: 12px">
 					<legend>Subir nuevo archivo</legend>
 					<div class="input-group">
