@@ -10,8 +10,9 @@ try {
 	$sql = "INSERT INTO empresa (nombre) VALUES ('$empresa')";
 	$sth = $conn->exec($sql);
 	$id = $conn->lastInsertId();
-	
-	echo $id;
+    $data = array("id"=>$id);
+    
+	echo json_encode($data);
 	
 } catch(Exception $e) {
 	

@@ -157,8 +157,10 @@ if(isset($_FILES['fichier']))
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge"><?php echo count($entities); ?>
 								</span>
 							</button>
-
-
+                                <span id="alertMessagePanel" class="pull-right alert alert-success" style="display:none;">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <strong>Exito!</strong><span id="alertMessageText"></span>&nbsp;&nbsp;&nbsp;
+                                </span>
 						</p>
 					</form>
 
