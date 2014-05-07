@@ -1,0 +1,162 @@
+/*
+
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-weight: bold;
+}
+
+label
+{
+    float: left;
+    padding-top: .2em;
+    margin-right: .3em;
+    width: 170px;
+    text-align: right;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+input[type="text"], input[type="password"]
+{
+    margin-bottom: .2em;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: #444;
+    width: 300px;
+}
+
+select
+{
+    margin-bottom: .2em;
+    border: 1px solid #ccc;
+    padding: 2px;
+    width: 306px;
+    color: #444;
+}
+
+table {
+	border-width: 2px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: #f48203;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+table th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #f48203;
+	background-color: white;
+}
+table td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #f48203;
+	background-color: white;
+}
+
+
+.row {
+margin-bottom: 20px;
+}
+.row .row {
+margin-top: 10px;
+margin-bottom: 0;
+}
+[class*="col-"] {
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #eee;
+border: 1px solid #ddd;
+background-color: rgba(86,61,124,.15);
+border: 1px solid rgba(86,61,124,.2);
+}
+
+
+*/
+
+.ui-autocomplete {
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+float: left;
+display: none;
+min-width: 160px;
+_width: 160px;
+padding: 4px 0;
+margin: 2px 0 0 0;
+list-style: none;
+background-color: #ffffff;
+border-color: #ccc;
+border-color: rgba(0, 0, 0, 0.2);
+border-style: solid;
+border-width: 1px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+-webkit-background-clip: padding-box;
+-moz-background-clip: padding;
+background-clip: padding-box;
+*border-right-width: 2px;
+*border-bottom-width: 2px;
+ 
+.ui-menu-item > a.ui-corner-all {
+display: block;
+padding: 3px 15px;
+clear: both;
+font-weight: normal;
+line-height: 18px;
+color: #555555;
+white-space: nowrap;
+ 
+&.ui-state-hover, &.ui-state-active {
+color: #ffffff;
+text-decoration: none;
+background-color: #0088cc;
+border-radius: 0px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+background-image: none;
+}
+}
+}
+
+body { padding-top: 70px; }
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
